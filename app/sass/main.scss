@@ -75,6 +75,7 @@ body {
 
 .header {
    position: fixed;
+   background-color: transparent;
    top: 0;
    width: 100%;
    z-index: 98;
@@ -296,6 +297,7 @@ body {
          &-img {
             width: 56px;
             margin-right: 40px;
+            flex-shrink: 0;
          }
          &-text {
             font-size: 15px;
@@ -307,6 +309,7 @@ body {
    &-training {
       &-content {
          display: flex;
+         flex-wrap: wrap;
          justify-content: space-between;
       }
       .training {
@@ -404,6 +407,7 @@ body {
       }
       .theory {
          background-image: url('../img/tryingle-back.png');
+         background-repeat: no-repeat;
          // padding: 30px 70px 30px 30px;
          &-title {
             font-size: 22px;
@@ -473,7 +477,7 @@ body {
          justify-content: space-between;
       }
       .review {
-         
+         max-width: 370px;
       }
    }
 
@@ -543,6 +547,9 @@ body {
       &-content {
          display: flex;
          justify-content: space-between;
+         &-img {
+            flex-shrink: 0;
+         }
       }
    }
 
