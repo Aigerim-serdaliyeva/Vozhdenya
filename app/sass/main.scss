@@ -79,7 +79,11 @@ body {
    top: 0;
    width: 100%;
    z-index: 98;
-   padding: 0;
+   padding: 0 0 10px;
+
+   &.scrolled {
+      background-color: $blue;
+   }
 
    // &-title {
    //    font-weight: 900;
@@ -180,6 +184,13 @@ body {
 
       &:hover, &.active {
          border-color: $blue;
+         .scrolled & {
+            border-color: #fff;
+         }
+      }
+
+      .scrolled & {
+         color: #fff;
       }
    }
 }
