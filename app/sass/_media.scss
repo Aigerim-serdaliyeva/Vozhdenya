@@ -4,29 +4,15 @@
     display: none !important;
 }
 
-@media only screen and (max-width : 1790px) {
-   #thanks-page {
-      .page-wrapper {
-         background-position: left top;
-      }   
-   }
-}
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
 
-   .header {
-      
-   }
-
    .main-menu {
-      margin-top: 0;
+      li {
+         margin-right: 15px;
+      }
    }
-
-   .section {    
-      
-   }
-
 }
 
 @media only screen and (max-width : 991px) {	
@@ -46,6 +32,12 @@
 
     .hamburger {
         display: block;
+        background-color: $blue;
+        &-inner {
+           &, &:before, &:after {
+              background-color: #fff;
+           }
+        }
     }    
 
     .header {
@@ -53,7 +45,23 @@
            display: none;
         }
 
-        
+        &-date {
+           padding: 0;
+        }
+
+        .button {
+           background-color: $blue;
+        }
+
+        &-content {
+           padding: 5px 0;
+           align-items: center;
+        }
+
+        .text-phone {
+            color: $text_color;
+            font-size: 14px;
+        }
     }
 
     .footer {
@@ -76,7 +84,7 @@
       display: none;
       background-color: #fff;
       position: fixed;
-      top: 101px;
+      top: 54px;
       left: 0;
       right: 0;
       text-align: left;
@@ -87,15 +95,17 @@
 		ul {
 			display: block;
 			height: auto;
-			padding: 0;
 
 			li {
-                margin: 0 0 5px;
-
-                &:last-child {
-                    margin: 0;
-                }
-			}
+            &:last-child {
+               margin: 0;
+            }
+         }
+         
+         a {
+            border-width: 3px;
+   			padding: 3px 0 0;         
+         }
 		}
     }
 
@@ -244,73 +254,15 @@
 
 }
 
-@media only screen and (max-width : 880px) { 
-  .more {
-    .form {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 
-    .logo {
-        max-width: 200px;
-    }
-
-    .header {
-        &-title {
-           display: none;
-        }
-        .logo {
-           margin: 0;
-        }
-        .button {
-           margin: 0;
-        }
-    }
-    
    .section {
       
    }
 
-   .more {
-     &-img {
-       margin-right: 30px;
-     }
-     .form {       
-        form {
-          margin: 0 auto;
-          max-width: 500px;
-          flex-direction: column;
-        }
 
-        &-info {
-          margin: 0 auto;
-          max-width: 500px;          
-        }
-
-        .input-div, .button {
-          max-width: none;
-          width: 100%;
-        }
-     }
-   }
-
-}
-
-@media only screen and (max-width : 640px) {
-  .more {
-    &-content {
-       flex-direction: column;         
-    }
-
-    &-img {
-      margin: 0 auto;
-   }
- }
 }
 
 /* Extra Small Devices, Phones */
@@ -355,12 +307,6 @@
 
 	.hidden-xxs {
 		display: none !important;
-    }
-
-    .header {
-       .button {
-          display: none;
-       }
     }
 
    .section {
@@ -432,7 +378,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
    .main-menu {
-      
+      .container {
+         width: auto;
+         padding: 0;
+      }
    }
 
    .section {
@@ -443,10 +392,4 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 	
-}
-
-@media only screen and (min-width : 1920px) {
-   .section {
-      
-   }
 }

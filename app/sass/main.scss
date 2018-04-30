@@ -79,27 +79,30 @@ body {
    top: 0;
    width: 100%;
    z-index: 98;
-   padding: 5px 0;
+   padding: 0;
 
-   &-title {
-      font-weight: 900;
-      color: $blue;
-      max-width: 440px;
-      font-size: 28px;
-      margin: 0 0 10px;
-   }
-   &-text {
-      font-size: 20px;
-      max-width: 440px;
-   }
+   // &-title {
+   //    font-weight: 900;
+   //    color: $blue;
+   //    max-width: 440px;
+   //    font-size: 28px;
+   //    margin: 0 0 10px;
+   // }
+   // &-text {
+   //    font-size: 20px;
+   //    max-width: 440px;
+   // }
 
    &-content {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
    }
    &-phone {
       margin-bottom: 12px;
+   }
+   &-date {
+      padding-top: 15px;
    }
    .text-phone {
       color: #fff;
@@ -163,7 +166,7 @@ body {
     }
 
     li {
-       margin-right: 20px;
+       margin-right: 25px;
     }
 
    a {
@@ -172,6 +175,12 @@ body {
       text-decoration: none;
       font-size: 14px;
       font-weight: 500;
+      padding-top: 8px;
+      border-top: 5px solid transparent;
+
+      &:hover, &.active {
+         border-color: $blue;
+      }
    }
 }
 
