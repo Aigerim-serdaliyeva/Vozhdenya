@@ -117,14 +117,16 @@ p {
 }
 
 .input, .textarea {
+    text-align: center;
     background: transparent;
-    color: #000;
+    color: $text_color;
     font-size: 14px;
     line-height: inherit;
     border: none;
+    border-radius: 3px;
     background-color: #fff;
     font-family: $default_family, sans-serif;
-    padding: 12px 20px 12px 35px;   
+    padding: 22px 30px;   
   
     &.error {
 		border-color: red;
@@ -144,20 +146,17 @@ p {
 	}
 
 	&::-webkit-input-placeholder {
-    color: #828181;
-    font-weight: 300;
+    color: #909090;
 		opacity: 1;
 	}
 	
 	&::-moz-placeholder {
-    color: #828181;
-    font-weight: 300;
+    color: #909090;
 		opacity: 1;
 	}
 	
 	&:-ms-input-placeholder {
-    color: #828181;
-    font-weight: 300;
+    color: #909090;
 		opacity: 1;
 	}
 	
