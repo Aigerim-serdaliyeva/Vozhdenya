@@ -196,12 +196,6 @@
          }
       }
 
-      &-video {
-         &-content {
-            justify-content: center;
-         }
-      }
-
       &-podarok-certificate {
          &-content {
             flex-direction: column;
@@ -390,6 +384,13 @@
          }
       }
 
+      &-video {
+         .video {
+            width: 49%;
+         }
+      }
+
+
    }
 
 
@@ -460,9 +461,20 @@
             }
          }
       }
+
       &-classes {
          &-content {
             justify-content: center;
+         }
+      }
+
+      &-video {
+         &-content {
+            justify-content: center;
+         }
+
+         .video {
+            width: auto;
          }
       }
    }
