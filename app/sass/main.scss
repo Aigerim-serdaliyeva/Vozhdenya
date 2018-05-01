@@ -44,6 +44,7 @@ body {
     min-height: 100vh;
     background-color: #fff;
     display: flex;
+    z-index: 0;
     flex-direction: column;
 }
 
@@ -207,7 +208,6 @@ body {
       justify-content: space-between;
 
       .input-div, .button {
-         // max-width: 300px;
          width: 32%;
       }
    }
@@ -397,9 +397,12 @@ body {
    }
 
    &-form {
+      z-index: 1;
    }
 
    &-different {
+      padding-top: 70px + 145px;
+      margin-top: -145px;
       background-color: #f2f3f9;
       &-content {
          display: flex;
@@ -411,7 +414,7 @@ body {
          &-title {
             font-size: 20px;
             font-weight: 700;
-            margin-bottom: 38px;
+            margin: 0 0 38px;
          }
          &-text {
             font-size: 15px;
