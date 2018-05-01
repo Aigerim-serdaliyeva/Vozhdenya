@@ -176,8 +176,8 @@ body {
       background: $accent;
    }
 
-   &-3 {
-
+   &-4 {
+      margin-bottom: 70px;
    }
 
    &-title {
@@ -527,7 +527,9 @@ body {
          justify-content: space-between;
       }
       .review {
+         width: 32%;
          max-width: 370px;
+         text-align: center;
       }
    }
 

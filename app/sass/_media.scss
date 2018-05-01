@@ -154,7 +154,6 @@
          }
       }
 
-
       &-different {
          padding-top: 70px;
          margin-top: 0;
@@ -189,16 +188,7 @@
                margin-bottom: 20px;
             }
          }
-      }
-
-      &-reviews {
-         &-content {
-            flex-direction: column;
-         }
-         .review {
-            margin: 0 auto 20px;
-         }
-      }
+      }     
 
       &-video {
          &-content {
@@ -375,6 +365,16 @@
                margin-left: -15px;
                margin-right: -15px;
             }
+         }
+      }
+
+      &-reviews {
+         &-content {
+            flex-direction: column;
+         }
+         .review {
+            width: 100%;
+            margin: 0 auto 20px;
          }
       }
 
