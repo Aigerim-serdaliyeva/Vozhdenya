@@ -20,6 +20,15 @@
             max-height: 500px;
          }
       }
+
+      &-azbuka {
+         .theory {
+            padding: 0px;
+            &-img {
+               display: none;
+            }
+         }
+      }
    }
 }
 
@@ -173,7 +182,6 @@
             margin-bottom: 30px;
          }
          .theory {
-            background-image: none;
             &-title {
                margin-bottom: 30px;
             }
