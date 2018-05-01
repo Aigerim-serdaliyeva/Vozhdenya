@@ -758,29 +758,25 @@
 		
 	</div>
 	
-   <div class="remodal remodal-small modal" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+   <div class="remodal remodal-small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
       <button data-remodal-action="close" class="remodal-close"></button>
 
-      <div class="modal-title">
+      <div class="remodal-title">
           Оставьте заявку <br> и наш консультант перезвонит Вам
       </div>
       
       <form action="/mail.php" method="post">
         <input type="hidden" name="info" value="Заказать звонок">
         <div class="input-div">
-           <img src="./img/name-icon.png" alt="" class="form-icon">
            <input type="text" class="input" name="name" placeholder="Имя">
         </div>
         <div class="input-div">
-           <img src="./img/phone-icon.png" alt="" class="form-icon">
            <input type="tel" class="input" name="phone" placeholder="Номер телефона*" required>
            <span class="error-message">Заполните это поле</span>
         </div>
 
         <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать звонок</button>
      </form>
-
-     <div class="form-info">*Ваши данные не будут переданы третьим лицам</div>
 
    </div>
 										

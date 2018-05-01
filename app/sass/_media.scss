@@ -548,39 +548,6 @@
       }      
    }
 
-   .modal {
-     &-title {
-       font-size: 20px;
-     }
-
-     &-form {
-       flex-direction: column;
-     }
-
-     &-left {
-       margin-right: 0;
-     }
-
-     &-footer {
-       display: block;
-       text-align: left;
-     }
-
-     &[data-remodal-id="zadat-vopros"] {  
-       background-size: cover;
-       background-position: center 50px;
-      .input-div {
-        &:last-child {
-          margin-bottom: 10px;
-        }
-      }
-
-      .textarea {
-        height: 125px;
-        margin-bottom: 10px;
-      }
-    }
-   }
 
 }
 
