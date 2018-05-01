@@ -599,12 +599,14 @@ body {
          margin-bottom: 40px;
          margin-top: -20px;
       }
+      
       &-content {
          display: flex;
          justify-content: space-between;
-         &-img {
-            flex-shrink: 0;
-         }
+      }
+
+      .certificate {
+         width: 32%;
       }
    }
 

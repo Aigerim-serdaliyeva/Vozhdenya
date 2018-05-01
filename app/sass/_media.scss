@@ -206,18 +206,6 @@
          &-form-content {
          }
       }
-
-      &-certificates {
-         &-text {
-            text-align: center;
-         }
-         &-content {
-            flex-direction: column;
-            &-img {
-               margin-bottom: 20px;
-            }
-         }
-      }
    }
 
    #thanks-page {
@@ -390,6 +378,20 @@
          }
       }
 
+      &-certificates {
+         &-text {
+            text-align: center;
+         }
+         &-content {
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+
+         .certificate {
+            width: auto;
+            margin-bottom: 20px;
+         }
+      }
 
    }
 
