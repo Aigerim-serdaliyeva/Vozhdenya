@@ -6,7 +6,7 @@ $(document).ready(function() {
     var $header = $(".header");
     var $menu = $(".main-menu");
     var utms = parseGET();
-    var headerHeight = 57;
+    var headerHeight = 96;
     var $hamburger = $(".hamburger");
     var sfer = $('[data-remodal-id="obsudit-sodrudni4estvo"]').remodal();
     var $sfer = $('[data-remodal-id="obsudit-sodrudni4estvo"]');
@@ -18,7 +18,7 @@ $(document).ready(function() {
     }
 
     if($wnd.width() < 992) {
-        headerHeight = 105;
+        headerHeight = 64;
     }
 
     $wnd.scroll(function() { onscroll(); });
