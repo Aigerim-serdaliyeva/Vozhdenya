@@ -36,6 +36,21 @@
             padding-right: 40px;   
          }
       }
+
+      &-work {
+         .work1 {
+            &:before {
+               width: 130px;
+            }
+         }
+
+         .work2 {
+            &:before {
+               width: 130px;
+               right: -35%;
+            }
+         }
+      }
    }
 }
 
@@ -120,6 +135,10 @@
       background-image: none;
       padding: 20px 30px;
 
+      &-5 {
+         margin-top: 0;
+      }
+
       &-title {
          font-size: 18px;
          margin-bottom: 20px;
@@ -197,6 +216,15 @@
          &-content {
             padding-left: 20px;
             padding-right: 20px;   
+         }
+      }
+
+      &-work {
+         padding-bottom: 70px;
+         .work1, .work2 {
+            &:before {
+               display: none;
+            }
          }
       }
    }
@@ -415,6 +443,16 @@
          }
       }
 
+      &-work {
+         &-content {
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+         .work1, .work2 {
+            padding-top: 0;
+            margin: 0 5px 20px;
+         }
+      }
    }
 
 
@@ -501,6 +539,12 @@
             width: auto;
          }
       }
+
+      &-work {
+         .work1, .work2 {
+            width: 100%;
+         }
+      }      
    }
 
    .modal {
