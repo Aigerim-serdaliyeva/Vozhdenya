@@ -287,41 +287,75 @@ body {
 
    &-why {
       background-image: url('../img/why-back.jpg');
+
+      .why {
+         width: 45%;
+         margin-bottom: 45px;
+
+         &:nth-child(5), &:nth-child(6) {
+            margin-bottom: 80px;
+         }
+      }
+
+      .polnyi-kurs {
+         width: 45%;
+         background-color: $accent;
+         display: flex;
+         align-items: center;
+         padding: 30px 35px;
+         max-width: 465px;
+         img {
+            margin-right: 20px;
+         }
+         &-title {
+            text-align: left;
+            font-size: 20px;
+            color: #1a2959;
+            font-weight: 900;
+            span {
+               font-size: 16px;
+               font-weight: 300;
+            }
+         }
+      }
+
       &-content {
          display: flex;
          flex-wrap: wrap;
+         flex-direction: column;
+         max-height: 450px;
          justify-content: space-between;
-         &-1 {
-            width: 45%;
-            .why {
-               margin-bottom: 45px;
-            }
-            .polnyi-kurs {
-               background-color: $accent;
-               display: flex;
-               padding: 30px 35px;
-               max-width: 465px;
-               img {
-                  margin-right: 20px;
-               }
-               &-title {
-                  text-align: left;
-                  font-size: 20px;
-                  color: #1a2959;
-                  font-weight: 900;
-                  span {
-                     font-size: 16px;
-                     font-weight: 300;
-                  }
-               }
-            }
-         }
-         &-2 {
-            width: 45%;
-            .why {
-               margin-bottom: 80px;
-            }
-         }
+         // &-1 {
+         //    width: 45%;
+         //    .why {
+         //       margin-bottom: 45px;
+         //    }
+         //    .polnyi-kurs {
+         //       background-color: $accent;
+         //       display: flex;
+         //       padding: 30px 35px;
+         //       max-width: 465px;
+         //       img {
+         //          margin-right: 20px;
+         //       }
+         //       &-title {
+         //          text-align: left;
+         //          font-size: 20px;
+         //          color: #1a2959;
+         //          font-weight: 900;
+         //          span {
+         //             font-size: 16px;
+         //             font-weight: 300;
+         //          }
+         //       }
+         //    }
+         // }
+         // &-2 {
+         //    width: 45%;
+         //    .why {
+         //       margin-bottom: 80px;
+         //    }
+         // }
       }
       .why {
          display: flex;
