@@ -29,6 +29,13 @@
             }
          }
       }
+
+      &-podarok {
+         &-content {
+            padding-left: 40px;
+            padding-right: 40px;   
+         }
+      }
    }
 }
 
@@ -196,14 +203,10 @@
          }
       }
 
-      &-podarok-certificate {
+      &-podarok {
          &-content {
-            flex-direction: column;
-         }
-         .podarok {
-            margin: 0 auto;
-         }
-         &-form-content {
+            padding-left: 20px;
+            padding-right: 20px;   
          }
       }
    }
@@ -375,6 +378,21 @@
       &-video {
          .video {
             width: 49%;
+         }
+      }
+
+      &-podarok {
+         margin-bottom: 0;
+         
+         &-content {
+            background-image: none;
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+         }
+
+         &-form {
+            width: 100%;
          }
       }
 
