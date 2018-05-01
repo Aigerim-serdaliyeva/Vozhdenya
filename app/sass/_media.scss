@@ -190,6 +190,12 @@
          }
       }     
 
+      &-classes {
+         img {
+            width: 235px;
+         }
+      }
+
       &-video {
          &-content {
             justify-content: center;
@@ -375,6 +381,12 @@
          .review {
             width: 100%;
             margin: 0 auto 20px;
+         }
+      }
+
+      &-classes {
+         img {
+            width: auto;
          }
       }
 
