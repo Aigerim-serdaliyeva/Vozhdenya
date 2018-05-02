@@ -2,9 +2,9 @@
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-$project_name = "SCK (лэндинг)";
-$admin_email  = "opt@sck-1.kz, client@marketing-time.kz";
-$server_mail = "<opt@sck-1.kz>";
+$project_name = "Вождение";
+$admin_email  = "rysdaulet91@gmail.com";
+$server_mail = "<rysdaulet91@gmail.com>";
 $form_subject = "Заявка";
 
 
@@ -32,9 +32,6 @@ function adopt($text) {
 
 $headers = "MIME-Version: 1.0" . PHP_EOL .
 "Content-Type: text/html; charset=utf-8" . PHP_EOL .
-'From: '.$project_name.' '.$server_mail. PHP_EOL .
-'Reply-To: '.$admin_email.'' . PHP_EOL;
+'From: '.$project_name.' '.$server_mail. PHP_EOL;
 
 mail($admin_email, adopt($form_subject), $message, $headers);
-
-header("Location: /thanks.html");

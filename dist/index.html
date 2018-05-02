@@ -6,8 +6,8 @@
 	<meta charset="utf-8">
 
 	<title>Центр высшего водительского мастерства в Алматы</title>
-	<meta name="description" content="Оптовая продажа бытовой техники по всему Казахстану">
-	<meta name="keywords" content="SCK, бытовая техника, купить, продажа, оптовая">
+	<meta name="description" content="Центр высшего водительского мастерства в Алматы">
+	<meta name="keywords" content="Центр высшего водительского мастерства в Алматы">
 
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -538,23 +538,32 @@
             <div class="section-title">
                Отзывы
             </div>
-            <div class="section-reviews-content">
+            <div class="owl-carousel review-carousel">
                <div class="review">
-                  <img src="./img/review-1.jpg" alt="">
+                  <video  controls>
+                     <source src="./video/review-1.mp4" type="video/mp4">
+                     Your browser does not support the video tag.
+                  </video>
                   <div class="review-title">
-                     Имя, возраст
+                     Павел Ким
                   </div>
                </div>
                <div class="review">
-                  <img src="./img/review-1.jpg" alt="">
+                  <video  controls>
+                     <source src="./video/review-2.mp4" type="video/mp4">
+                     Your browser does not support the video tag.
+                  </video>
                   <div class="review-title">
-                     Имя, возраст
+                     Игорь
                   </div>
                </div>
                <div class="review">
-                  <img src="./img/review-1.jpg" alt="">
+                  <video  controls>
+                     <source src="./video/review-3.mp4" type="video/mp4">
+                     Your browser does not support the video tag.
+                  </video>
                   <div class="review-title">
-                     Имя, возраст
+                     Ольга
                   </div>
                </div>
             </div>            
@@ -567,6 +576,20 @@
                Как проходят наши занятия
             </div>
             <div class="section-classes-content">
+               <img src="./img/classes-1.jpg" alt="">
+               <img src="./img/classes-2.jpg" alt="">
+               <img src="./img/classes-3.jpg" alt="">
+               <img src="./img/classes-4.jpg" alt="">
+               <img src="./img/classes-5.jpg" alt="">
+               <img src="./img/classes-6.jpg" alt="">
+               <img src="./img/classes-7.jpg" alt="">
+               <img src="./img/classes-8.jpg" alt="">
+               <img src="./img/classes-9.jpg" alt="">
+               <img src="./img/classes-10.jpg" alt="">
+               <img src="./img/classes-11.jpg" alt="">
+               <img src="./img/classes-12.jpg" alt="">
+            </div>
+            <div class="owl-carousel classes-carousel">
                <img src="./img/classes-1.jpg" alt="">
                <img src="./img/classes-2.jpg" alt="">
                <img src="./img/classes-3.jpg" alt="">
@@ -651,7 +674,7 @@
                Наш инструктор прошел подготовку в московском Центре Высшего Водительского Мастерства <br>
                и имеет соответствующие сертификаты
             </div>
-            <div class="section-certificates-content">
+            <div class="owl-carousel certificate-carousel">
                <a class="certificate" href="./img/certificate-1.jpg" data-fancybox="galleryCertificate">               
                   <img src="./img/certificate-1.jpg" alt="">
                </a>
@@ -757,7 +780,14 @@
 		</footer>
 		
 	</div>
-	
+   
+   <div class="remodal remodal-small" data-remodal-id="thanks-modal" data-remodal-options="hashTracking: false">
+      <button data-remodal-action="close" class="remodal-close"></button>
+
+      <div class="remodal-title">Спасибо за заявку. Мы с вами свяжимся.</div>
+      <div>Ваше сообщение успешно отправлено, наши менеджеры свяжутся с вами в ближайшее время</div>
+   </div>
+
    <div class="remodal remodal-small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
       <button data-remodal-action="close" class="remodal-close"></button>
 
@@ -785,5 +815,90 @@
 	<script src="./js/libs.min.js"></script>
 	<script src="./js/main.min.js"></script>
     
+   <div>
+         <div id="callback-wrapper-mediaguru">
+            <div class="callback-wrapper-mediaguru-btns">
+               <div class="callback-item">
+                  <a target="_parent" href="https://api.whatsapp.com/send?phone=+77012267997">
+                     <i class="callback-wrapper_icon callback-wrapper_whatsapp-icon"></i> WhatsApp
+                  </a>
+               </div>
+               <div class="callback-item">
+                  <a href="tel:+77012267997">
+                     <i class="callback-wrapper_icon callback-wrapper_call-icon"></i> Позвонить
+                  </a>
+               </div>
+            </div>
+         </div>
+      <style>
+      #callback-wrapper-mediaguru {
+         position: fixed;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         width: 100%;
+         background-color: #43a047;
+         z-index: 1000;
+         display: none;
+      }
+      .callback-wrapper-mediaguru-btns {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         padding: 8px 0;
+      }
+      #callback-wrapper-mediaguru .callback-item {
+         display: inline-block;
+         vertical-align: middle;
+         width: 50%;
+         float: left;
+         text-align: center;
+         border-left: 1px solid #fff;
+         border-right: 1px solid #fff;
+      }
+      #callback-wrapper-mediaguru .callback-item:first-child {
+         border-left: none;
+      }
+      #callback-wrapper-mediaguru .callback-item:last-child {
+         border-right: none;
+      }
+      #callback-wrapper-mediaguru .callback-item a,#callback-wrapper-mediaguru .copyrights a {
+         display: block;
+         font-size: 14px;
+         font-weight: 400;
+         color: #fff;
+         text-align: center;
+         text-decoration: none;
+      }
+      #callback-wrapper-mediaguru .callback-item a:hover , #callback-wrapper-mediaguru .callback-item a:focus , #callback-wrapper-mediaguru .callback-item a:active,#callback-wrapper-mediaguru .copyrights a:hover,#callback-wrapper-mediaguru .copyrights a:focus,#callback-wrapper-mediaguru .copyrights a:active {
+         color: #fff;
+         text-decoration: none;
+      }
+      #callback-wrapper-mediaguru .callback-wrapper_icon {
+         display: block;
+         margin: 0 auto 5px;
+         width: 40px;
+         height: 28px;
+      }
+      #callback-wrapper-mediaguru .callback-wrapper_whatsapp-icon {
+         background: url('img/whatsapp-icon.svg')no-repeat center;
+      }
+      #callback-wrapper-mediaguru .callback-wrapper_call-icon {
+         background: url('img/phone-icon.svg')no-repeat center;
+      }
+      #callback-wrapper-mediaguru .callback-item a:hover {
+         color: #ffd762;
+      }
+      @media (max-width: 480px){
+         body {
+            padding-bottom: 69px;
+         }
+         #callback-wrapper-mediaguru{
+            display: block;
+         }
+      }
+      </style>
+   </div>
+      
 </body>
 </html>
