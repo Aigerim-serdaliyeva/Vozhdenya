@@ -8,8 +8,7 @@ $(document).ready(function() {
     var utms = parseGET();
     var headerHeight = 96;
     var $hamburger = $(".hamburger");
-    var sfer = $('[data-remodal-id="obsudit-sodrudni4estvo"]').remodal();
-    var $sfer = $('[data-remodal-id="obsudit-sodrudni4estvo"]');
+    var thanks = $('[data-remodal-id="thanks-modal"]').remodal();
 
     if(utms && Object.keys(utms).length > 0) {
         window.sessionStorage.setItem('utms', JSON.stringify(utms));
@@ -74,12 +73,6 @@ $(document).ready(function() {
         $html.stop().animate({ scrollTop: 0 }, 'slow', 'swing');
     });
 
-    $(".appliances-link").click(function(e) {
-      e.preventDefault();
-      var title = $(this).data("title");
-      $sfer.find("[name=info]").val("Обсудить сотрудничество: " + title);
-      sfer.open();
-    })
 
     $("input[type=tel]").mask("+7 (999) 999 99 99", {
         completed: function() {
@@ -119,6 +112,7 @@ $(document).ready(function() {
     });
 
     $(".ajax-submit").click(function(e) {        
+      e.preventDefault();
         var $form = $(this).closest('form');
         var $requireds = $form.find(':required');
         var formValid = true;
@@ -132,21 +126,27 @@ $(document).ready(function() {
             }
         });
 
-        if(formValid) {
-            
-            if(Object.keys(utms).length === 0) {
-              utms['utm'] = "Прямой переход";
-            } 
+        var data = $form.serialize();
 
+        if(Object.keys(utms).length > 0) {
             for(var key in utms) {
-              var input = document.createElement("input");
-              input.type = "hidden";
-              input.name = key;
-              input.value = utms[key];
-              $form[0].appendChild(input);
+                data += '&' + key + '=' + utms[key];
             }
         } else {
-          e.preventDefault();
+            data += '&utm=Прямой переход'
+        } 
+
+        if(formValid) {
+            $.ajax({
+                type: "POST",
+                url: "/mail.php",
+                data: data
+            }).done(function() {                
+            });
+
+            $requireds.removeClass('error');
+            $form[0].reset();
+            thanks.open();
         }
     });
 
