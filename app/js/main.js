@@ -151,7 +151,7 @@ $(document).ready(function() {
     });
 
 
-    $(".carousel-certificates").owlCarousel({
+    $(".review-carousel").owlCarousel({
       nav: false,
       dots: true,
       loop: true,
@@ -161,12 +161,23 @@ $(document).ready(function() {
       responsive: {
          0: { items: 1, mouseDrag: false },
          480: { items: 2, mouseDrag: true },
-         768: { items: 3 }, 
-         992: { items: 4 }, 
+         768: { items: 3 } 
       },
    });
 
-   $(".carousel-trademarks").owlCarousel({
+   $(".classes-carousel").owlCarousel({
+      nav: false,
+      dots: true,
+      loop: true,
+      smartSpeed: 500,
+      margin: 30,
+      navText: ['', ''],
+      responsive: {
+         0: { items: 1, mouseDrag: false }
+      },
+   });
+
+   $(".certificate-carousel").owlCarousel({
       nav: false,
       dots: true,
       loop: true,
@@ -175,9 +186,11 @@ $(document).ready(function() {
       navText: ['', ''],
       responsive: {
          0: { items: 1, mouseDrag: false },
-         480: { items: 2, mouseDrag: true } 
+         480: { items: 2, mouseDrag: true },
+         768: { items: 3 } 
       },
    });
+   
    
 
 });

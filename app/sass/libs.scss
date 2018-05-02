@@ -47,16 +47,19 @@
 
       &-dots {
          margin-top: 30px;
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
       }
       
       &-dot {
          width: 15px;
          height: 16px;
-         background: lighten($accent, 30%) !important;
-         margin: 0 5px;
+         background: lighten($blue, 30%) !important;
+         margin: 0 5px 5px;
 
          &.active {
-            background: $accent !important;
+            background: $blue !important;
          }
       }
 	}

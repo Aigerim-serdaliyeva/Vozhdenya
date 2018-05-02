@@ -392,15 +392,6 @@
          }
       }
 
-      &-reviews {
-         &-content {
-            flex-direction: column;
-         }
-         .review {
-            width: 100%;
-            margin: 0 auto 20px;
-         }
-      }
 
       &-classes {
          img {
@@ -527,7 +518,10 @@
 
       &-classes {
          &-content {
-            justify-content: center;
+            display: none;
+         }
+         .classes-carousel {
+            display: block;
          }
       }
 

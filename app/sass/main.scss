@@ -548,14 +548,13 @@ body {
 
    &-reviews {
       background-color: #f2f3f9;
-      &-content {
-         display: flex;
-         justify-content: space-between;
-      }
+ 
       .review {
-         width: 32%;
          max-width: 370px;
          text-align: center;
+      }
+      video {
+         width: 100%;
       }
    }
 
@@ -568,6 +567,9 @@ body {
          img {
             margin-bottom: 25px;
          }
+      }
+      .classes-carousel {
+         display: none;
       }
    }
 
@@ -635,10 +637,6 @@ body {
          margin-top: -20px;
       }
       
-      &-content {
-         display: flex;
-         justify-content: space-between;
-      }
 
       .certificate {
          width: 32%;
