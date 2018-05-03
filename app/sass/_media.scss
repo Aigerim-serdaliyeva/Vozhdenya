@@ -516,6 +516,12 @@
          }
       }
 
+      &-reviews {
+         .review {
+            margin: 0 auto;
+         }
+      }
+
       &-classes {
          &-content {
             display: none;
@@ -527,11 +533,11 @@
 
       &-video {
          &-content {
-            justify-content: center;
+            display: none;
          }
 
-         .video {
-            width: auto;
+         .video-carousel {
+            display: block;
          }
       }
 
